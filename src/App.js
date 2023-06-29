@@ -1,24 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import AsciiArt from './AsciiArt';
+import Xero from './components/Xero';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <a className='head1'>Zeros & Ones</a><br></br>
+      <a className='head2'>.......and other things</a>
+      <div className="App">
+        {/* <AsciiArt imageSrc="image.jpg" width={80} height={40} /> */}
+        <Xero />
+      </div>
     </div>
+    
   );
 }
 
